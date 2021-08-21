@@ -1,0 +1,15 @@
+Reduced_Cost_Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,308.43,3701.16,USD,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),,Network Load Balancer,0,290.18,3482.16,USD,"Number of Network Load Balancers (1), Average number of new TCP connections (50000 per second), Average TCP connection duration (90 seconds)"
+My Estimate,US East (N. Virginia),,S3 Standard,0,47.1,565.20,USD,S3 Standard storage (2 TB per month)
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,2036.7,24440.40,USD,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),,Amazon EC2,0,1171.78,14061.36,USD,"Operating system (Linux), Quantity (4), Pricing strategy (On-Demand Instances), Storage amount (500 GB), Instance type (t3.2xlarge)"
+My Estimate,US East (N. Virginia),RDS,Amazon RDS for MariaDB,0,1598.94,19187.28,USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (1 TB per month), Quantity (2), Instance type (db.m3.xlarge), Deployment selection (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (500 GB)"
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+,,,,,,,,
+I reduced the sizes of space on the EC2 and I lowered the instances of the RDS dbs. I honestly believe that the 4cpu and 15 GB of RAM should be enough to handle 50000 users. Especially with autoscaling and backups in place,,,,,,,,
